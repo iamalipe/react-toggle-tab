@@ -1,1 +1,1 @@
-export { ToggleTab } from "./components/ToggleTab/ToggleTab";
+export * from './components/Requirements';
