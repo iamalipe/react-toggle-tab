@@ -1,6 +1,7 @@
 import React from "react";
+import { FC } from "react";
 
-export const ToggleTab = () => {
+const ToggleTab: FC = () => {
   return (
     <div>
       <h2>Hello</h2>
@@ -8,3 +9,5 @@ export const ToggleTab = () => {
     </div>
   );
 };
+
+export default ToggleTab;
