@@ -1,20 +1,7 @@
 {
-  "name": "react-toggle-tab",
-  "version": "0.0.5",
-  "description": "React Toggle Tab",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "rm -rf dist/ &&  npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
   "author": "Abhiseck Bhattacharya",
+  "version": "0.0.4",
+  "description": "A component library template for getting people started with easy to re-use components for everyday projects.",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -28,21 +15,23 @@
     "react-toggle-tab",
     "toggle-tab"
   ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ &&  npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@storybook/addon-actions": "^6.4.22",
-    "@storybook/addon-essentials": "^6.4.22",
-    "@storybook/addon-interactions": "^6.4.22",
-    "@storybook/addon-links": "^6.4.22",
-    "@storybook/react": "^6.4.22",
-    "@storybook/testing-library": "^0.0.9",
-    "@types/node": "^17.0.21",
+    "@types/node": "^17.0.25",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "babel-loader": "^8.2.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "typescript": "^4.5.2"
+    "typescript": "^4.6.3"
   },
   "peerDependencies": {
     "react": "^17.0.2",
